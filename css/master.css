@@ -47,6 +47,66 @@ body, html {
     background-repeat: no-repeat;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: 0px 0px 0px 0px;
+    background-position: center;
     background-size: cover;
 }
+
+/*head window*/
+.head-window {
+  color: white;
+  text-align: center;
+  padding-top: 200px;
+}
+
+.head-window h1{
+  font-size: 28px;
+  font-weight: bold;
+  width: 760px;
+  margin: auto;
+}
+
+.head-window .ooo {
+  font-size: 41px;
+}
+
+.head-window button {
+  background-color: rgba(0, 0, 0, 0.0);
+  color: white;
+  border-radius: 0 0;
+  border-width: 3px;
+  border-color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 5px 40px;
+  margin-top: 150px;
+}
+
+.head-window button:hover {
+  border-color: white;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.head-window button:active {
+  border-color: white;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.9);
+}
+/*end head window*/
+
+
+/*section aboutus*/
+.aboutus h1 {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+  width: 100px;
+  margin-left: 100px;
+  padding-left: 10px;
+}
+
+.aboutus h1::after {
+  
+}
+/*end section aboutus*/
