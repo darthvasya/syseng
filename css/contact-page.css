@@ -1,0 +1,18 @@
+.head-window {
+  height: 250px;
+}
+
+.head-window h2 {
+  margin: 0px;
+  position: absolute;
+  left: 10%;
+  top: 20%;
+}
+
+.contacts {
+  text-align: center;
+}
+
+.contacts .text {
+  font-size: 17px;
+}
