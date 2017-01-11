@@ -87,3 +87,12 @@
 /*.articles .main{
   border: 1px solid black;
 }*/
+/*start feedback*/
+.feedback input, .feedback textarea {
+  border-radius: 0px;
+}
+
+.feedback input[type='submit'] {
+  background-color: #1F618D;
+}
+/*end feedback*/
