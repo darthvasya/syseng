@@ -41,6 +41,10 @@
   background-color: rgba(242, 243, 244, 0.4);
 }
 
+.article-one:hover .main {
+  background-color: inherit;
+}
+
 .article .main .link {
   position: absolute;
   right: 20px;

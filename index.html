@@ -41,10 +41,10 @@
 
     <div class="parallax head-window">
       <h1><span class="ooo">ООО «Системная инженерия»</span> <br>предоставляет заказчикам комплексные решения в направлениях ориентированных на повышение ресурсоэффективности и экологической безопасности</h1>
-      <button type="button" class="btn btn-default">Начать</button>
+      <button type="button" class="btn btn-default" id="button">Начать</button>
     </div>
 
-    <section class="aboutus">
+    <section class="aboutus" id="aboutus">
       <h1>О нас</h1>
       <div class="col-md-8">
         <p>
@@ -58,6 +58,8 @@
             Задача ООО «Системная инженерия» – индивидуальный инженерный подход к заказчикам, с учётом потребностей и возможностей.
             <br><br>
             Часть работ могут выполнятся самими заказчиками при шеф-монтажном сопровождении ООО «Системная инженерия».
+            <br>
+            <br><br>
           </p>
       </div>
       <div class="col-md-4">
@@ -317,5 +319,13 @@
 
     <script src="node_modules/jquery/dist/jquery.js" charset="utf-8"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js" charset="utf-8"></script>
+
+    <script type="text/javascript">
+    $("#button").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#aboutus").offset().top
+        }, 2000);
+    });
+    </script>
   </body>
 </html>
