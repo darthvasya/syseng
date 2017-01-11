@@ -393,8 +393,6 @@ body, html {
   }
 }
 
-
-
 .news .body .element .text{
   border: 1px solid #A6A69D;
 }
@@ -413,9 +411,13 @@ body, html {
   .auto .element-hide {
     display: none;
   }
-
 }
 
+@media  screen and (max-width : 420px) {
+  .auto .body h1 {
+    padding-top: 25px;
+  }
+}
 
 
 .news .element p, h3{
@@ -425,7 +427,12 @@ body, html {
 .news .element i{
   padding: 10px;
 }
-
+@media  screen and (max-width : 360px) {
+  .news .element span a{
+    position: absolute;
+    right: 20px;
+  }
+}
 /*end news*/
 
 /*auto*/
@@ -448,6 +455,16 @@ body, html {
 }
 /*end parthners*/
 
+/*start feedback*/
+.feedback input, .feedback textarea {
+  border-radius: 0px;
+}
+
+.feedback input[type='submit'] {
+  background-color: #1F618D;
+}
+/*end feedback*/
+
 /*footer*/
 footer .body{
   width: 100%;
@@ -461,6 +478,13 @@ footer .body .block {
   margin-right: 60px;
   color: white;
   text-align: center;
+}
+
+@media  screen and (max-width : 720px) {
+
+  footer .body .block {
+    margin-right: 0px;
+  }
 }
 
 footer .body .block p{
