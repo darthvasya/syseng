@@ -1,0 +1,424 @@
+
+.parallax {
+    /* Full height */
+    height: 100%;
+    margin-top: -40px;
+    /* The image used */
+
+    background-image: url("../images/fon.jpg");
+    background-repeat: no-repeat;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+/*head window*/
+.head-window {
+  padding-top: 200px;
+
+  text-align: center;
+
+  color: white;
+}
+
+.head-window h1{
+  width: 760px;
+  margin: auto;
+
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.head-window .ooo {
+  font-size: 41px;
+}
+
+.head-window button {
+  margin-top: 150px;
+  padding: 5px 40px;
+
+  text-transform: uppercase;
+
+  color: white;
+  border-width: 3px;
+  border-color: white;
+  border-radius: 0 0;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.0);
+
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.head-window button:hover {
+  color: rgba(0, 0, 0, 0.9);
+  border-color: white;
+  background-color: white;
+}
+
+.head-window button:active {
+  color: rgba(0, 0, 0, 0.9);
+  border-color: white;
+  background-color: white;
+}
+
+
+@media  screen and (max-width : 990px) {
+
+  .head-window h1{
+    width: 100%;
+    margin-top: -120px;
+    font-size: 21px;
+    font-weight: bold;
+  }
+}
+
+/*end head window*/
+
+
+/*section aboutus*/
+.aboutus h1 {
+  width: 100px;
+  margin-left: 200px;
+  padding-left: 10px;
+
+  text-transform: uppercase;
+
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.aboutus h1::after {
+  position: absolute;
+
+  width: 40px;
+  height: 4px;
+  margin-top: 30px;
+  margin-left: -55px;
+
+  content: '';
+
+  background-color: skyblue;
+}
+
+.aboutus p {
+  padding-top: 30px;
+  padding-left: 80px;
+
+  font-family: sans-serif !important;
+  font-size: 18px;
+  line-height: 1.4em;
+}
+
+.aboutus img {
+  margin-top: 30px;
+}
+
+.aboutus h4 {
+  margin-top: 30px;
+  text-decoration: underline;
+  font-size: 21px;
+}
+
+@media  screen and (max-width : 990px) {
+  .aboutus p {
+    padding-top: 30px;
+    padding-left: 0px;
+
+    font-size: 16px;
+  }
+
+  .aboutus h1 {
+    width: 100px;
+    margin-left: 20px;
+    padding-left: 10px;
+    font-size: 21px;
+  }
+
+  .element {
+    width: 400px;
+    margin-left: 20%;
+    margin-right: auto;
+  }
+
+}
+
+@media  screen and (max-width : 600px) {
+  .element {
+    width: 400px;
+    margin-left: 0px;
+  }
+}
+
+@media  screen and (max-width : 420px) {
+
+  .aboutus p {
+    padding-top: 30px;
+    padding-left: 0px;
+
+    font-size: 14px;
+  }
+
+  .element {
+    width: 100%;
+  }
+}
+
+
+/*end section aboutus*/
+
+/*start waterclean*/
+.waterclean .body, .auto .body{
+  width: 100%;
+
+  background: url('../images/waterback2.jpg') center no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.waterclean .body .img-overlay, .auto .body .img-overlay{
+    width: 100%;
+    height: 100%;
+
+    background: rgba(255,255,255,0.5);
+}
+
+.waterclean .body h1, .auto .body h1 {
+  margin-left: 100px;
+  padding-left: 10px;
+
+  text-transform: uppercase;
+
+  color: white;
+
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.waterclean .body h1::after, .auto .body h1::after {
+  position: absolute;
+
+  width: 40px;
+  height: 4px;
+  margin-top: 30px;
+  margin-left: -180px;
+  content: '';
+  background-color: skyblue;
+}
+
+.waterclean .body .centertext, .auto .body .centertext {
+  text-align: center;
+  color: white;
+  font-size: 16px;
+}
+.waterclean .body .element, .auto .body .element {
+  margin-top: 20px;
+  margin-right: 70px;
+  margin-bottom: 70px;
+}
+@media  screen and (max-width : 990px) {
+  .waterclean .body .element, .auto .body .element {
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+  }
+}
+
+@media  screen and (max-width : 990px) {
+  .news .body h1 {
+    margin-left: 15px;
+    padding-left: 0px;
+    font-size: 21px;
+  }
+  .news .body .lefttext {
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 5px;
+  }
+
+
+  .waterclean .body h1, .auto .body h1 {
+    margin-left: 0px;
+    padding-top: 10px;
+  }
+
+  .waterclean .body h1::after, .auto .body h1::after {
+    margin-left: -120px;
+  }
+
+  .waterclean .body .centertext, .auto .body .centertext {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+  }
+}
+.waterclean .body .element .text, .auto .body .element .text {
+  padding-top: 10px;
+  padding-bottom: 20px;
+
+  text-align: center;
+
+  background-color: white;
+
+  font-size: 28px;
+  line-height: 1em;
+}
+
+
+.waterclean button, .auto button {
+  margin-bottom: 90px;
+  margin-left: -80px;
+  padding: 5px 40px;
+
+  text-transform: uppercase;
+
+  color: white;
+  border-width: 3px;
+  border-color: white;
+  border-radius: 0 0;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.0);
+
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media  screen and (max-width : 990px) {
+  .waterclean button, .auto button {
+    margin-bottom: 90px;
+    margin-left: -10px;
+    padding: 5px 40px;
+  }
+}
+
+.waterclean button:hover, .auto button:hover {
+  color: rgba(0, 0, 0, 0.9);
+  border-color: white;
+  background-color: white;
+}
+
+.waterclean button:active, .auto button:active {
+  color: rgba(0, 0, 0, 0.9);
+  border-color: white;
+  background-color: white;
+}
+/*end waterclean*/
+
+/*start news*/
+
+.news .body{
+  margin-top: 25px;
+}
+
+.news .body h1 {
+  margin-left: 100px;
+  padding-left: 10px;
+  text-transform: uppercase;
+  color: black;
+
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.news .body h1::after {
+  position: absolute;
+
+  width: 40px;
+  height: 4px;
+  margin-top: 30px;
+  margin-left: -180px;
+  content: '';
+  background-color: skyblue;
+}
+
+.news .body .lefttext {
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 80px;
+}
+
+@media  screen and (max-width : 990px) {
+  .news .body h1 {
+    margin-left: 15px;
+    padding-left: 0px;
+    font-size: 21px;
+  }
+  .news .body .lefttext {
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 5px;
+  }
+}
+
+.news .body .element .text{
+  border: 1px solid #A6A69D;
+}
+
+.news .element {
+  margin-right: 60px;
+  margin-bottom: 40px;
+}
+
+@media  screen and (max-width : 990px) {
+  .news .element {
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+
+  .auto .element-hide {
+    display: none;
+  }
+}
+
+@media  screen and (max-width : 420px) {
+  .auto .body h1 {
+    padding-top: 25px;
+  }
+}
+
+
+.news .element p, h3{
+  padding: 5px 10px;
+}
+
+.news .element i{
+  padding: 10px;
+}
+@media  screen and (max-width : 360px) {
+  .news .element span a{
+    position: absolute;
+    right: 20px;
+  }
+}
+/*end news*/
+
+/*auto*/
+.auto .body{
+  background: url('../images/waterback2.jpg') center no-repeat;
+}
+
+/*end auto*/
+
+/*parthners*/
+.parthners .body {
+  background-color: #1F618D;
+  color: white;
+  text-align: center;
+  font-size: 21px;
+}
+
+.parthners .body .parthner{
+  margin-bottom: 40px;
+}
+/*end parthners*/
+
+/*start feedback*/
+.feedback input, .feedback textarea {
+  border-radius: 0px;
+}
+
+.feedback input[type='submit'] {
+  background-color: #1F618D;
+}
+/*end feedback*/
