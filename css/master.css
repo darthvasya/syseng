@@ -177,6 +177,20 @@ body, html {
     padding-left: 10px;
     font-size: 21px;
   }
+
+  .element {
+    width: 400px;
+    margin-left: 20%;
+    margin-right: auto;
+  }
+
+}
+
+@media  screen and (max-width : 600px) {
+  .element {
+    width: 400px;
+    margin-left: 0px;
+  }
 }
 
 @media  screen and (max-width : 420px) {
@@ -188,6 +202,9 @@ body, html {
     font-size: 14px;
   }
 
+  .element {
+    width: 100%;
+  }
 }
 
 
@@ -392,6 +409,11 @@ body, html {
     margin-right: 0px;
     margin-bottom: 15px;
   }
+
+  .auto .element-hide {
+    display: none;
+  }
+
 }
 
 
@@ -408,8 +430,9 @@ body, html {
 
 /*auto*/
 .auto .body{
-  background: url('../images/fon2.jpg') center no-repeat;
+  background: url('../images/waterback2.jpg') center no-repeat;
 }
+
 /*end auto*/
 
 /*parthners*/
