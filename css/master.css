@@ -77,4 +77,22 @@ footer .body .footul a:hover {
   background-color: inherit;
   text-decoration: underline;
 }
+
+@media  screen and (max-width : 720px) {
+  footer .body .footul {
+    margin-left: 0px;
+  }
+
+  footer .footul ul{
+    margin: auto;
+    text-align: center;
+  }
+
+  footer .footul li a{
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+  }
+
+}
 /*end footer*/
