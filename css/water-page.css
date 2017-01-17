@@ -62,5 +62,40 @@
 .main p > li {
   font-size: 16px;
 }
-
 /*end main*/
+
+/*clients*/
+.clients h3 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.clients ul {
+  margin-top: 80px;
+}
+
+.clients li {
+  list-style: none;
+  font-size: 18px;
+  font-family: sans-serif;
+  margin-bottom: 140px;
+}
+
+.clients .glyphicon{
+  border-radius: 50% 50%;
+  padding: 10px;
+  background-color: #117864;
+  color: white;
+}
+
+.clients li p {
+  position: absolute;
+  left: 140px;
+  margin-top: -40px;
+}
+
+.clients li:nth-child(4) p {
+  margin-top: -30px;
+}
+
+/*end clients*/
