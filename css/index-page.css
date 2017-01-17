@@ -74,6 +74,23 @@
   }
 }
 
+@media  screen and (max-width : 440px) {
+  .head-window h1{
+    margin-top: 25px;
+  }
+}
+
+@media  screen and (max-width : 320px) {
+  .head-window h1{
+    margin-top: -40px;
+    margin-bottom: 0px;
+  }
+
+  .head-window button {
+    margin-top: 30px;
+  }
+}
+
 /*end head window*/
 
 
@@ -158,6 +175,7 @@
     padding-left: 0px;
 
     font-size: 14px;
+    margin-bottom: -20px;
   }
 
   .element {
