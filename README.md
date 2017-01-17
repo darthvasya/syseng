@@ -1,3 +1,3 @@
 # syseng
 
-The fornt-end part of the project "System engeniting" - web-site of company.
+The fornt-end part of the project "System engeniring" - web-site of company.
