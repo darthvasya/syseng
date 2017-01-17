@@ -55,17 +55,24 @@
   background-color: skyblue;
 }
 
+
+@media  screen and (max-width : 720px) {
+  .main h3:after {
+    display: none;
+  }
+}
+
 .main p{
   font-size: 17px;
 }
 
-.main p > li {
-  font-size: 16px;
+.main li {
+  font-size: 17px;
 }
 /*end main*/
 
 /*clients*/
-.clients h3 {
+h3 {
   text-align: center;
   font-weight: bold;
 }
@@ -98,4 +105,36 @@
   margin-top: -30px;
 }
 
+
+@media  screen and (max-width : 720px) {
+  .clients li {
+    list-style: initial;
+  }
+  .clients ul {
+    margin-top: 0px;
+  }
+  .clients .glyphicon {
+    display: none;
+  }
+  .clients li:nth-child(4) p {
+    margin-top: 0px;
+  }
+  .clients li {
+    margin-bottom: 40px;
+    margin-left: -40px;
+  }
+
+  .clients li p {
+    position: relative;;
+    left: 0px;
+    margin-top: 0px;
+  }
+}
+
 /*end clients*/
+
+/*order*/
+.order p {
+  font-size: 17px;
+}
+/*end order*/
