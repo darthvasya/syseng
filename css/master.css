@@ -78,6 +78,11 @@ footer .body .footul a:hover {
   text-decoration: underline;
 }
 
+footer .footul li a{
+  text-transform: uppercase;
+  color: white;
+}
+
 @media  screen and (max-width : 720px) {
   footer .body .footul {
     margin-left: 0px;

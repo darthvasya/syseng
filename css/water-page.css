@@ -1,0 +1,66 @@
+.parallax {
+    /* Full height */
+    height: 100%;
+    margin-top: -40px;
+    /* The image used */
+
+    background-image: url("../images/fon.jpg");
+    background-repeat: no-repeat;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.head-window {
+  height: 250px;
+}
+
+.head-window h2 {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+
+  margin: 0px;
+
+  color: white;
+}
+
+/*start feedback*/
+.feedback input, .feedback textarea {
+  border-radius: 0px;
+}
+
+.feedback input[type='submit'] {
+  background-color: #1F618D;
+}
+/*end feedback*/
+
+/*main*/
+.main h3 {
+  padding-left: 40px;
+  font-weight: bold;
+}
+
+.main h3:after {
+  position: absolute;
+  left: 100px;
+  top: 50px;
+
+  width: 50px;
+  height: 3px;
+
+  content: '';
+
+  background-color: skyblue;
+}
+
+.main p{
+  font-size: 17px;
+}
+
+.main p > li {
+  font-size: 16px;
+}
+
+/*end main*/
