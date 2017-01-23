@@ -38,28 +38,24 @@
 
 
 /*grid*/
-.system{
-	margin: 20px 0;
-}
-.system h1{
-	line-height: 22px;
-    font-size: 18px;
-    font-family: open-sans, sans-serif;
-    font-weight: 700;
-	margin-left: 10px;
-}
-.system p{
-	font-size: 18px;
-	line-height: 22px;
-	font-family: open-sans, sans-serif;
-	font-weight: 400;
+.title {
+  text-transform: uppercase;
+  font-size: 21px;
+  text-align: center;
+  font-weight: bold;
 }
 
-@media  screen and (max-width : 774px) {
-	.clients img{
-		width: 100%;
-	}
+.title:after {
+  content: '';
+  position: absolute;
+  top: 70px;
+  left: 240px;
+  width: 50px;
+  height: 3px;
+  background-color: skyblue;
 
 }
-
+.pointer{
+	margin-top: 20px;
+}
 /*end grid*/
