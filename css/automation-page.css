@@ -93,6 +93,24 @@
 .text_after_sol img{
 	margin: 20px 0;
 }
+.software{
+	margin: 50px 0;
+}
+.software h1{
+	line-height: 22px;
+    font-size: 18px;
+    text-align: center;
+    font-family: open-sans, sans-serif;
+    font-weight: 700;
+}
+.software p{
+	font-size: 14px;
+	line-height: 17px;
+	word-wrap: break-word;
+	text-align: center;
+	font-family: open-sans, sans-serif;
+	font-weight: 400;
+}
 @media  screen and (max-width : 990px) {
 	.sol_text{
 		margin-top: 0;

@@ -1,0 +1,189 @@
+.parallax {
+    /* Full height */
+    height: 100%;
+    margin-top: -40px;
+    /* The image used */
+
+    background-image: url("../images/fon.jpg");
+    background-repeat: no-repeat;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.head-window {
+  height: 250px;
+}
+
+.head-window h2 {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+
+  margin: 0px;
+
+  color: white;
+}
+
+/*start feedback*/
+.feedback input, .feedback textarea {
+  border-radius: 0px;
+}
+
+.feedback input[type='submit'] {
+  background-color: #1F618D;
+}
+/*end feedback*/
+
+/*main*/
+.main h3 {
+  padding-left: 40px;
+  font-weight: bold;
+}
+
+.main h3:after {
+  position: absolute;
+  left: 100px;
+  top: 50px;
+
+  width: 50px;
+  height: 3px;
+
+  content: '';
+
+  background-color: skyblue;
+}
+
+
+@media  screen and (max-width : 990px) {
+  .main h3:after {
+    display: none;
+  }
+}
+
+.main p{
+  font-size: 17px;
+}
+
+.main li {
+  font-size: 17px;
+}
+/*end main*/
+
+/*clients*/
+h3 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.clients ul {
+  margin-top: 80px;
+}
+
+.clients li {
+  list-style: none;
+  font-size: 18px;
+  font-family: sans-serif;
+  margin-bottom: 140px;
+}
+
+.clients .glyphicon{
+  border-radius: 50% 50%;
+  padding: 10px;
+  background-color: #117864;
+  color: white;
+}
+
+.clients li p {
+  position: absolute;
+  left: 140px;
+  margin-top: -40px;
+}
+
+.clients li:nth-child(4) p {
+  margin-top: -30px;
+}
+
+
+@media  screen and (max-width : 990px) {
+  .clients li {
+    list-style: initial;
+  }
+  .clients ul {
+    margin-top: 0px;
+  }
+  .clients .glyphicon {
+    display: none;
+  }
+  .clients li:nth-child(4) p {
+    margin-top: 0px;
+  }
+  .clients li {
+    margin-bottom: 40px;
+    margin-left: -40px;
+  }
+
+  .clients li p {
+    position: relative;;
+    left: 0px;
+    margin-top: 0px;
+  }
+}
+
+/*end clients*/
+
+
+.software ul {
+  margin-top: 0;
+}
+
+.software li {
+  list-style: disc;
+  font-size: 18px;
+  font-family: sans-serif;
+  margin-bottom: 0px;
+}
+
+
+.software li p {
+  position: absolute;
+  left: 0;
+  margin-top: 0;
+}
+
+.software li:nth-child(4) p {
+  margin-top: 0;
+}
+
+
+@media  screen and (max-width : 990px) {
+  .software li {
+    list-style: initial;
+  }
+  .software ul {
+    margin-top: 0px;
+  }
+  .software .glyphicon {
+    display: none;
+  }
+  .software li:nth-child(4) p {
+    margin-top: 0px;
+  }
+  .software li {
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  .software li p {
+    position: relative;;
+    left: 0px;
+    margin-top: 0px;
+  }
+}
+
+/*order*/
+.order p {
+  font-size: 17px;
+}
+/*end order*/
