@@ -139,10 +139,12 @@ h3 {
 }
 
 .software li {
-  list-style: disc;
-  font-size: 18px;
-  font-family: sans-serif;
-  margin-bottom: 0px;
+  	list-style:disc;
+ 	font-size: 18px;
+	line-height: 22px;
+	font-family: open-sans, sans-serif;
+	font-weight: 400;
+  	margin-bottom: 0px;
 }
 
 

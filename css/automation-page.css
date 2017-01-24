@@ -111,6 +111,31 @@
 	font-family: open-sans, sans-serif;
 	font-weight: 400;
 }
+.systems{
+	margin: 20px 0;
+}
+.systems .img{
+	margin: 20px 0;
+}
+.systems h1{
+	line-height: 22px;
+    font-size: 18px;
+    text-align: center;
+    font-family: open-sans, sans-serif;
+    font-weight: 700;
+}
+.systems p{
+	font-size: 14px;
+	line-height: 17px;
+	word-wrap: break-word;
+	text-align: left;
+	font-family: open-sans, sans-serif;
+	font-weight: 400;
+}
+.systems_text{
+	margin-top: 20px;
+	margin-left: 20px;
+}
 @media  screen and (max-width : 990px) {
 	.sol_text{
 		margin-top: 0;
