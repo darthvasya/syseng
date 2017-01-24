@@ -45,7 +45,7 @@
   font-weight: bold;
 }
 
-.title:after {
+/*.title:after {
   content: '';
   position: absolute;
   top: 70px;
@@ -54,7 +54,7 @@
   height: 3px;
   background-color: skyblue;
 
-}
+}*/
 .pointer{
 	margin-top: 20px;
 }
@@ -81,10 +81,23 @@
 	font-family: open-sans, sans-serif;
 	font-weight: 400;
 }
+.text_after_sol{
+	margin-top: 50px;
+	font-size: 14px;
+	line-height: 17px;
+	word-wrap: break-word;
+	text-align: center;
+	font-family: open-sans, sans-serif;
+	font-weight: 400;
+}
+.text_after_sol img{
+	margin: 20px 0;
+}
 @media  screen and (max-width : 990px) {
 	.sol_text{
 		margin-top: 0;
 	}
 }
+
 
 /*end grid*/
