@@ -58,4 +58,33 @@
 .pointer{
 	margin-top: 20px;
 }
+.sol_text{
+	margin-top: 50px;
+}
+.sol{
+
+		margin: 20px 0;
+}
+.sol h1{
+	font-size: 14px;
+	line-height: 17px;
+	word-wrap: break-word;
+	text-align: center;
+	font-family: open-sans, sans-serif;
+	font-weight: 700;
+}
+.sol p{
+	font-size: 14px;
+	line-height: 17px;
+	word-wrap: break-word;
+	text-align: center;
+	font-family: open-sans, sans-serif;
+	font-weight: 400;
+}
+@media  screen and (max-width : 990px) {
+	.sol_text{
+		margin-top: 0;
+	}
+}
+
 /*end grid*/
