@@ -16,6 +16,8 @@ namespace UserStore.DAL.Repositories
         private ApplicationRoleManager roleManager;
         private IClientManager clientManager;
 
+        private ArticleRepository articleRepository;
+
         public IdentityUnitOfWork(string connectionString)
         {
             db = new ApplicationContext(connectionString);
@@ -37,6 +39,16 @@ namespace UserStore.DAL.Repositories
         public ApplicationRoleManager RoleManager
         {
             get { return roleManager; }
+        }
+
+        public IRepository<Article> Articles
+        {
+            get
+            {
+                if (articleRepository == null)
+                    articleRepository = new ArticleRepository(db);
+                return articleRepository;
+            }
         }
 
         public async Task SaveAsync()
@@ -63,6 +75,11 @@ namespace UserStore.DAL.Repositories
                 }
                 this.disposed = true;
             }
+        }
+
+        public void Save()
+        {
+            db.SaveChanges();
         }
     }
 }
