@@ -12,19 +12,20 @@ namespace syseng_back.Web.Controllers
 {
     public class HomeController : Controller
     {
-        IUserService userService;
+        IArticleService _articleService;
 
-        public HomeController(IUserService _userService)
+        public HomeController(IArticleService articleService)
         {
-            this.userService = _userService;
+            this._articleService = articleService;
         }
 
         public ActionResult Index()
         {
-            IEnumerable<UserDTO> userDtos = userService.GetUsers();
-            Mapper.Initialize(c => c.CreateMap<UserDTO, UserViewModel>());
-            var users = Mapper.Map<IEnumerable<UserDTO>, List<UserViewModel>>(userDtos);   
-            return View(users);
+            IEnumerable<ArticleDTO> articlesDtos = _articleService.GetArticles();
+            Mapper.Initialize(c => c.CreateMap<ArticleDTO, ArticleViewModel>());
+            var articles = Mapper.Map<IEnumerable<ArticleDTO>, List<ArticleViewModel>>(articlesDtos);
+            ViewBag.Articles = articles;   
+            return View();
         }
 
         [Authorize]

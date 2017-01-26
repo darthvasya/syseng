@@ -28,6 +28,7 @@ namespace syseng_back.Web.Util
         private void AddBindings()
         {
             kernel.Bind<IUserService>().To<UserService>();
+            kernel.Bind<IArticleService>().To<ArticleService>();
         }
     }
 }
