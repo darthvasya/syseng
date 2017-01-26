@@ -7,38 +7,36 @@ using System.Data.Entity;
 
 namespace syseng_back.DAL.Repositories
 {
-    public class RoleRepository : IRepository<Role>
+    public class ProjectTypesRepository : IRepository<ProjectType>
     {
         private ApplicationContext _context;
 
-        public RoleRepository(ApplicationContext context)
+        public ProjectTypesRepository(ApplicationContext context)
         {
             _context = context;
         }
 
-        public void Create(Role item)
+        public void Create(ProjectType item)
         {
-            _context.Roles.Add(item);
+            _context.ProjectTypes.Add(item);
         }
 
         public void Delete(int id)
         {
-            Role role = _context.Roles.Find(id);
-            if (role != null)
-                _context.Roles.Remove(role);
+            throw new NotImplementedException();
         }
 
-        public Role Get(int id)
+        public ProjectType Get(int id)
         {
-            return _context.Roles.Find(id);
+            return _context.ProjectTypes.Find(id);
         }
 
-        public IEnumerable<Role> GetAll()
+        public IEnumerable<ProjectType> GetAll()
         {
-            return _context.Roles;
+            return _context.ProjectTypes;
         }
 
-        public void Update(Role item)
+        public void Update(ProjectType item)
         {
             _context.Entry(item).State = EntityState.Modified;
         }

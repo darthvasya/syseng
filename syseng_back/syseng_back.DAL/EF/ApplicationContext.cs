@@ -14,6 +14,7 @@ namespace syseng_back.DAL.EF
         public DbSet<Role> Roles { get; set; }
         public DbSet<Article> Articles { get; set; }
         public DbSet<Project> Projects { get; set; }
+        public DbSet<ProjectType> ProjectTypes { get; set; }
 
         static ApplicationContext()
         {

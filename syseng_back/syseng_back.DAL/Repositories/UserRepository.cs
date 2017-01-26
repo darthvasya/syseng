@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using syseng_back.DAL.Entities;
 using syseng_back.DAL.Interfaces;
 using syseng_back.DAL.EF;
+using System.Data.Entity;
 
 namespace syseng_back.DAL.Repositories
 {
-    class UserRepository : IRepository<User>
+    public class UserRepository : IRepository<User>
     {
         private ApplicationContext _context;
 
@@ -20,12 +18,14 @@ namespace syseng_back.DAL.Repositories
 
         public void Create(User item)
         {
-            throw new NotImplementedException();
+            _context.Users.Add(item);
         }
 
         public void Delete(int id)
         {
-            throw new NotImplementedException();
+            User user = _context.Users.Find(id);
+            if (user != null)
+                _context.Users.Remove(user);
         }
 
         public User Get(int id)
@@ -40,7 +40,7 @@ namespace syseng_back.DAL.Repositories
 
         public void Update(User item)
         {
-            throw new NotImplementedException();
+            _context.Entry(item).State = EntityState.Modified;
         }
     }
 }

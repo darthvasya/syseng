@@ -10,6 +10,9 @@ namespace syseng_back.DAL.Repositories
         private ApplicationContext db;
         private UserRepository userRepository;
         private RoleRepository roleRepository;
+        private ArticleRepository articleRepository;
+        private ProjectRepository projectRepository;
+        private ProjectTypesRepository projectTypeRepository;
 
         public EFUnitOfWork(string connectionString)
         {
@@ -40,7 +43,9 @@ namespace syseng_back.DAL.Repositories
         {
             get
             {
-                throw new NotImplementedException();
+                if (articleRepository == null)
+                    articleRepository = new ArticleRepository(db);
+                return articleRepository;
             }
         }
 
@@ -48,7 +53,9 @@ namespace syseng_back.DAL.Repositories
         {
             get
             {
-                throw new NotImplementedException();
+                if (projectRepository == null)
+                    projectRepository = new ProjectRepository(db);
+                return projectRepository;
             }
         }
 
@@ -56,7 +63,9 @@ namespace syseng_back.DAL.Repositories
         {
             get
             {
-                throw new NotImplementedException();
+                if (projectTypeRepository == null)
+                    projectTypeRepository = new ProjectTypesRepository(db);
+                return projectTypeRepository;
             }
         }
 

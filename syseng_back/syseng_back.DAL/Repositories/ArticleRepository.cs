@@ -1,12 +1,9 @@
-﻿using syseng_back.DAL.EF;
+﻿using System;
+using System.Collections.Generic;
 using syseng_back.DAL.Entities;
 using syseng_back.DAL.Interfaces;
-using System;
-using System.Collections.Generic;
+using syseng_back.DAL.EF;
 using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace syseng_back.DAL.Repositories
 {
