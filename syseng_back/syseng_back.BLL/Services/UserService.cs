@@ -37,7 +37,13 @@ namespace syseng_back.BLL.Services
 
         public UserDTO GetUserByEmailAndPassword(string email, string password)
         {
-            throw new NotImplementedException();
+            var users = context.Users.GetAll();
+            var user = users.Where(p => p.Email == email && p.Password == password).FirstOrDefault();
+            if(user == null)
+                throw new ValidationException("User не найден", "");
+            Mapper.Initialize(c => c.CreateMap<User, UserDTO>());
+            return Mapper.Map<User, UserDTO>(user);
+            //var user = await context.Users.Include(u => u.Role).FirstOrDefaultAsync(u => u.Email == model.Email && u.Password == model.Password);
         }
 
         public IEnumerable<UserDTO> GetUsers()
