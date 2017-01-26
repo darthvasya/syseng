@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "syseng_back.DAL", "syseng_b
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "syseng_back.BLL", "syseng_back.BLL\syseng_back.BLL.csproj", "{AD01262C-6381-4DA5-8CA9-8C48476ACE78}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "syseng_back.Web", "syseng_back.Web\syseng_back.Web.csproj", "{A6DD818C-EF32-4216-800C-1CA438EC22FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{AD01262C-6381-4DA5-8CA9-8C48476ACE78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD01262C-6381-4DA5-8CA9-8C48476ACE78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD01262C-6381-4DA5-8CA9-8C48476ACE78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6DD818C-EF32-4216-800C-1CA438EC22FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6DD818C-EF32-4216-800C-1CA438EC22FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6DD818C-EF32-4216-800C-1CA438EC22FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6DD818C-EF32-4216-800C-1CA438EC22FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

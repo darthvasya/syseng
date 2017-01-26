@@ -48,7 +48,8 @@ namespace syseng_back.BLL.Services
 
         public IEnumerable<UserDTO> GetUsers()
         {
-            throw new NotImplementedException();
+            Mapper.Initialize(c => c.CreateMap<User, UserDTO>());
+            return Mapper.Map<IEnumerable<User>, List<UserDTO>>(context.Users.GetAll());
         }
 
         public UserDTO CreateUser(string email, string password, int roleId)

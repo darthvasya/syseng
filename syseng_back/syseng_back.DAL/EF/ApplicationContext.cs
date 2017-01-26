@@ -13,9 +13,29 @@ namespace syseng_back.DAL.EF
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles { get; set; }
 
+        static ApplicationContext()
+        {
+            Database.SetInitializer<ApplicationContext>(new StoreDbInitializer());
+        }
+
         public ApplicationContext(string connectionString)
             :base(connectionString)
         {
+        }
+
+        public ApplicationContext()
+        {
+
+        }
+
+        public class StoreDbInitializer : DropCreateDatabaseIfModelChanges<ApplicationContext>
+        {
+            protected override void Seed(ApplicationContext db)
+            {
+                db.Users.Add(new User { Email = "v@mail.ru", Password = "123456", RoleId = 1 });
+                db.Users.Add(new User { Email = "n@mail.ru", Password = "123456", RoleId = 1 });
+                db.SaveChanges();
+            }
         }
     }
 }
