@@ -11,6 +11,9 @@ namespace syseng_back.DAL.Interfaces
     {
         IRepository<User> Users { get; }
         IRepository<Role> Roles { get; }
+        IRepository<Article> Articles { get; }
+        IRepository<Project> Projects { get; }
+        IRepository<ProjectType> ProjectTypes { get; }
         void Save();
     }
 }

@@ -36,6 +36,30 @@ namespace syseng_back.DAL.Repositories
             }
         }
 
+        public IRepository<Article> Articles
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public IRepository<Project> Projects
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public IRepository<ProjectType> ProjectTypes
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
+
         private bool disposed = false;
         public virtual void Dispose(bool disposing)
         {
