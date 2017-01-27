@@ -24,6 +24,11 @@ namespace syseng_back.Web
                       "~/Content/bootstrap.min.css",
                       "~/Content/css/master.css",
                       "~/Content/css/index-page.css"));
+
+            bundles.Add(new StyleBundle("~/Content/articles").Include(
+                      "~/Content/bootstrap.min.css",
+                      "~/Content/css/master.css",
+                      "~/Content/css/articles-page.css"));
         }
     }
 }

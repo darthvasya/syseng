@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewBag.Title = "Articles";
+    ViewBag.Title = "Projects";
     Layout = "~/Views/Shared/_LayoutArticles.cshtml";
 }
 
@@ -21,7 +21,7 @@
                     <img src="~/Content/images/@article.ImageUrl" width="40%" alt="">
                 </div>
                 <div class="content right">
-                    
+
                     <h1>@Html.ActionLink("s", "Article", "Home", new { id = article.Id }, new { @class = "header-link" })</h1>
                     <i>@article.Date</i>
                     <p>@article.ShortBody</p>
@@ -33,5 +33,7 @@
         </div>
     }
 </section>
+
+
 
 

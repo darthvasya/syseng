@@ -88,26 +88,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-md-3 element">
-                <a href="#" style="color: black; text-decoration: none;">
-                    <div class="img">
-                        <img src="~/Content/images/wat_el.jpg" width="100%" alt="">
-                    </div>
-                    <div class="text">
-                        <p>Супер-мега крутой водокачка</p>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-3 element">
-                <a href="#" style="color: black; text-decoration: none;">
-                    <div class="img">
-                        <img src="~/Content/images/wat_el.jpg" width="100%" alt="">
-                    </div>
-                    <div class="text">
-                        <p>Супер-мега крутой водокачка</p>
-                    </div>
-                </a>
-            </div>
+     
             <div class="col-md-1">
 
             </div>
@@ -126,41 +107,22 @@
             <div class="col-md-1">
 
             </div>
-            <div class="col-md-3 element">
-                <div class="img">
-                    <img src="~/Content/images/wat_el.jpg" width="100%" alt="">
+            @foreach (var article in ViewBag.Articles)
+            {
+                <div class="col-md-3 element">
+                    <div class="img">
+                        <img src="~/Content/images/@article.ImageUrl" width="100%" alt="">
+                    </div>
+                    <div class="text">
+                        @*@Html.ActionLink("Подробнееы", "Article", "Home", new { id = article.Id }, null)*@
+                        @*<a href="#" style="color: black;"></a>*@
+                        <h3>"@article.Title"</h3>
+                        <p>@article.ShortBody</p>
+                        <i>@article.Date.ToShortDateString()</i>
+                        <span style="margin-left: 90px;">@Html.ActionLink("Подробнее", "Article", "Home", new { id = article.Id }, null)</span>
+                    </div>
                 </div>
-                <div class="text">
-                    <a href="#" style="color: black;"><h3>Заголовок суперстатьи</h3></a>
-                    <p>Супер-мега крутой водокачка оводокачечкие ололо молодец тако ий дальше пиши еще раз давайка ага опа жопа</p>
-                    <i>2016-02-12</i>
-                    <span style="margin-left: 90px;"><a href="#">Подробнее...</a></span>
-                </div>
-            </div>
-
-            <div class="col-md-3 element">
-                <div class="img">
-                    <img src="~/Content/images/wat_el.jpg" width="100%" alt="">
-                </div>
-                <div class="text">
-                    <a href="#" style="color: black;"><h3>Заголовок суперстатьи</h3></a>
-                    <p>Супер-мега крутой водокачка оводокачечкие ололо молодец тако ий дальше пиши еще раз давайка ага опа жопа</p>
-                    <i>2016-02-12</i>
-                    <span style="margin-left: 90px;"><a href="#">Подробнее...</a></span>
-                </div>
-            </div>
-
-            <div class="col-md-3 element">
-                <div class="img">
-                    <img src="~/Content/images/wat_el.jpg" width="100%" alt="">
-                </div>
-                <div class="text">
-                    <a href="#" style="color: black;"><h3>Заголовок суперстатьи</h3></a>
-                    <p>Супер-мега крутой водокачка оводокачечкие ололо молодец тако ий дальше пиши еще раз давайка ага опа жопа</p>
-                    <i>2016-02-12</i>
-                    <span style="margin-left: 90px;"><a href="#">Подробнее...</a></span>
-                </div>
-            </div>
+            }
 
             <div class="col-md-1">
 

@@ -35,8 +35,10 @@ namespace syseng_back.DAL.EF
         {
             protected override void Seed(ApplicationContext db)
             {
-                db.Users.Add(new User { Email = "v@mail.ru", Password = "123456", RoleId = 1 });
-                db.Users.Add(new User { Email = "n@mail.ru", Password = "123456", RoleId = 1 });
+                //db.Roles.Add(new Role({ Name = "admin" }));
+                //db
+                //db.Users.Add(new User { Email = "v@mail.ru", Password = "123456", RoleId = 1 });
+                //db.Users.Add(new User { Email = "n@mail.ru", Password = "123456", RoleId = 1 });
                 db.SaveChanges();
             }
         }

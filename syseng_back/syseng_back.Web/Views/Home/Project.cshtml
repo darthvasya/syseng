@@ -1,0 +1,81 @@
+﻿
+@{
+    ViewBag.Title = "Project";
+    Layout = "~/Views/Shared/_LayoutArticles.cshtml";
+}
+
+<section>
+    <div class="col-md-12">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 main">
+            <a href="../Articles" style="color: black; text-decoration: none;"><h3><span class="glyphicon glyphicon-arrow-left"></span> Статьи</h3></a>
+        </div>
+    </div>
+</section>
+
+<section class="articles">
+    <div class="col-md-12 article article-one">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 main">
+            <div class="image left">
+                <img src="~/Content/images/@ViewBag.Article.ImageUrl" width="100%" alt="">
+                <h1 class="article-head">@ViewBag.Article.Title</h1>
+            </div>
+            <div class="content-article ">
+                <br>
+                <i>@ViewBag.Article.Date</i>
+                <br>
+                <br>
+                <p>
+                    @ViewBag.Article.Body
+                </p>
+            </div>
+            <hr>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</section>
+
+<section>
+    <div class="col-md-12">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 main">
+            <a href="../Articles" style="color: black; text-decoration: none;"><h3><span class="glyphicon glyphicon-arrow-left"></span> Статьи</h3></a>
+        </div>
+    </div>
+</section>
+
+<section class="feedback">
+    <div class="col-md-12 body">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <h2>Контактная форма</h2>
+            <form role="form">
+                <div class="form-group">
+                    <label for="name">Имя</label>
+                    <input name="name" type="text" class="form-control" placeholder="Имя" required />
+                    <p class="help-block">Введите Ваше имя</p>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input name="email" type="email" class="form-control" placeholder="E-mail" required />
+                    <p class="help-block">Введите Ваш электронный адресс</p>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Сообщение</label>
+                    <textarea name="comment" class="form-control" placeholder="Сообщение" required></textarea>
+                    <p class="help-block">Введите Ваше сообщение. В ближайшее время мы Вам ответим.</p>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-info" value="Отправить" />
+                </div>
+            </form>
+        </div>
+        <div class="col-md-2"></div>
+
+    </div>
+    <br>
+    <br>
+</section>
+
+
