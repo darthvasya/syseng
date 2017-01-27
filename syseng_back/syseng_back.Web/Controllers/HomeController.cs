@@ -21,7 +21,6 @@ namespace syseng_back.Web.Controllers
 
         public ActionResult Index()
         {
-           
             IEnumerable<ArticleDTO> articlesDtos = _articleService.GetArticles().Take(3);
             Mapper.Initialize(c => c.CreateMap<ArticleDTO, ArticleViewModel>());
             var articles = Mapper.Map<IEnumerable<ArticleDTO>, List<ArticleViewModel>>(articlesDtos);
