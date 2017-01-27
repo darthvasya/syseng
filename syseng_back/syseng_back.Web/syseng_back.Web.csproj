@@ -183,8 +183,59 @@
     <Compile Include="Util\NinjectDependencyResolver.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap.css" />
+    <Content Include="App_Data\vasa.mdf" />
+    <Content Include="App_Data\vasa_log.ldf">
+      <DependentUpon>vasa.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\articles-page.css" />
+    <Content Include="Content\css\automation-2-page.css" />
+    <Content Include="Content\css\automation-page.css" />
+    <Content Include="Content\css\contact-page.css" />
+    <Content Include="Content\css\index-page.css" />
+    <Content Include="Content\css\master.css" />
+    <Content Include="Content\css\water-page.css" />
+    <Content Include="Content\images\1155-57314d0467928.jpg" />
+    <Content Include="Content\images\comp.jpg" />
+    <Content Include="Content\images\dem.png" />
+    <Content Include="Content\images\dirty-industry-stack-factory.jpg" />
+    <Content Include="Content\images\fon.jpg" />
+    <Content Include="Content\images\fon2.jpg" />
+    <Content Include="Content\images\korovki.jpg" />
+    <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\logo3.png" />
+    <Content Include="Content\images\logo_krugloe3.jpg" />
+    <Content Include="Content\images\man-people-space-desk%281%29.jpg" />
+    <Content Include="Content\images\man-people-space-desk.jpg" />
+    <Content Include="Content\images\omz.png" />
+    <Content Include="Content\images\omz1.png" />
+    <Content Include="Content\images\pak.png" />
+    <Content Include="Content\images\pexels-photo %284%29.jpg" />
+    <Content Include="Content\images\pexels-photo %285%29.jpg" />
+    <Content Include="Content\images\pexels-photo-110469-1.jpg" />
+    <Content Include="Content\images\pexels-photo-110469.jpg" />
+    <Content Include="Content\images\pexels-photo-165985.jpg" />
+    <Content Include="Content\images\pexels-photo-24257-ieu8735-fr.png" />
+    <Content Include="Content\images\pexels-photo-24257.jpg" />
+    <Content Include="Content\images\pexels-photo-26939-ieu8750-fr.png" />
+    <Content Include="Content\images\pexels-photo-26939.jpg" />
+    <Content Include="Content\images\pexels-photo-40120.jpg" />
+    <Content Include="Content\images\pexels-photo-57007%281%29.jpg" />
+    <Content Include="Content\images\pexels-photo-57007.jpg" />
+    <Content Include="Content\images\pexels-photo-87383.jpg" />
+    <Content Include="Content\images\pexels-photo-ieu8732-fr.png" />
+    <Content Include="Content\images\pexels-photo.jpg" />
+    <Content Include="Content\images\services.jpg" />
+    <Content Include="Content\images\shutterstock_178188626.jpg" />
+    <Content Include="Content\images\smoke.jpg" />
+    <Content Include="Content\images\splav.png" />
+    <Content Include="Content\images\technology-computer-metal-industry-163150.jpg" />
+    <Content Include="Content\images\water-kitchen-black-design.jpg" />
+    <Content Include="Content\images\waterback.jpg" />
+    <Content Include="Content\images\waterback2.jpg" />
+    <Content Include="Content\images\water_treatment_system.jpg" />
+    <Content Include="Content\images\wat_el.jpg" />
+    <Content Include="Content\images\рисунок11.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -208,17 +259,8 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
@@ -232,6 +274,33 @@
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Account\SuccessRegister.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.min.css.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_LayoutFront.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_LayoutArticles.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Articles.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+
+    @Styles.Render("~/Content/index")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <nav id="nav" class="navbar navbar-default navbar-fixed">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button style="border-radius: 0px;" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">
+                    <img alt="Brand" src="~/Content/images/logo3.png" width="35" height="35">
+                </a>
+                <h4 style="color:white;">ООО "Системная инженерия"</h4>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul id="ul" class="nav navbar-nav navbar-right mainheader">
+                    <li>@Html.ActionLink("Главная", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Проекты", "Projects", "Home")</li>
+                    <li>@Html.ActionLink("Статьи", "Articles", "Home")</li>
+                    <li>@Html.ActionLink("Контакты", "Contact", "Home")</li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    @RenderBody()
+
+    <footer>
+        <div class="col-md-12 body">
+            <div class="col-md-1"></div>
+
+            <div class="col-md-3 block bloackbl">
+                <h2>Системы водоочистки</h2>
+                <p>Проводим системы водочистки и водокачки для подкачки бицухи и грудака</p>
+            </div>
+
+            <div class="col-md-3 block">
+                <h2>Контакты</h2>
+                <p><span class="glyphicon glyphicon-earphone"></span> +375 44 465 86 10</p>
+                <p><span class="glyphicon glyphicon-earphone"></span> +375 44 465 73 14</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> p.burik@pinsk.1ak.by</p>
+                <p><span class="glyphicon glyphicon-home"></span> Республика Беларусь, г. Пинск, ул. Брестская д. 72</p>
+            </div>
+
+            <div class="col-md-3 block bloackbl">
+                <h2>Системы водоочистки</h2>
+                <p>Проводим системы водочистки и водокачки для подкачки бицухи и грудака</p>
+            </div>
+            <div class="col-md-1"></div>
+
+            <div class="container">
+                <ul id="ul" class="nav navbar-nav  footul">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Проекты</a></li>
+                    <li><a href="#">Статьи</a></li>
+                    <li><a href="#">Решения</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

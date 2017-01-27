@@ -1,0 +1,102 @@
+
+.parallax {
+    /* Full height */
+    height: 100%;
+    margin-top: -40px;
+    /* The image used */
+
+    background-image: url("../images/fon.jpg");
+    background-repeat: no-repeat;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.head-window {
+  height: 250px;
+}
+
+.head-window h2 {
+  margin: 0px;
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  color: white;
+}
+
+.articles {
+  margin-top: 25px;
+}
+
+.article {
+  margin-bottom: 30px;
+}
+
+.article .main {
+  padding-top: 20px;
+}
+
+.article:hover .main{
+  background-color: rgba(242, 243, 244, 0.4);
+}
+
+.article-one:hover .main {
+  background-color: inherit;
+}
+
+.article .main .link {
+  position: absolute;
+  right: 20px;
+}
+
+.articles .article .content {
+  position: absolute;
+  top: 0px;
+  left: 42%;
+}
+
+.header-link {
+  color: inherit;
+}
+
+.header-link:hover {
+  color: inherit;
+}
+
+.article-head {
+  top: 25%;
+  position: absolute;
+  width: 70%;
+  left: 15%;
+  color: white;
+}
+
+@media  screen and (max-width : 774px) {
+  .article img {
+    width: 100%;
+  }
+
+  .articles .article .content {
+    position: relative;
+    top: 0px;
+    left: 0%;
+  }
+
+  .article .main .link {
+    position: relative;
+    left: 0%;
+  }
+}
+/*.articles .main{
+  border: 1px solid black;
+}*/
+/*start feedback*/
+.feedback input, .feedback textarea {
+  border-radius: 0px;
+}
+
+.feedback input[type='submit'] {
+  background-color: #1F618D;
+}
+/*end feedback*/

@@ -1,4 +1,334 @@
-﻿@model syseng_back.Web.Models.ArticleViewModel
+﻿
 @{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Index";
+    Layout = null;
 }
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+
+    @Styles.Render("~/Content/index")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <nav id="nav" class="navbar navbar-default navbar-fixed">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button style="border-radius: 0px;" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">
+                    <img alt="Brand" src="~/Content/images/logo3.png" width="35" height="35">
+                </a>
+                <h4 style="color:white;">ООО "Системная инженерия"</h4>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul id="ul" class="nav navbar-nav navbar-right mainheader">
+                    <li>@Html.ActionLink("Главная", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Проекты", "Projects", "Home")</li>
+                    <li>@Html.ActionLink("Статьи", "Articles", "Home")</li>
+                    <li>@Html.ActionLink("Контакты", "Contact", "Home")</li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="parallax head-window">
+        <h1><span class="ooo">ООО «Системная инженерия»</span> <br>предоставляет заказчикам комплексные решения в направлениях ориентированных на повышение ресурсоэффективности и экологической безопасности</h1>
+        <button type="button" class="btn btn-default" id="button">Начать</button>
+    </div>
+
+    <section class="aboutus" id="aboutus">
+        <h1>О нас</h1>
+        <div class="col-md-8">
+            <p>
+                ООО «Системная инженерия» предоставляет заказчикам комплексные решения в направлениях ориентированных на повышение ресурсоэффективности и экологической безопасности:
+                <br><br>
+                - очистка сточных вод промышленных объектов;<br>
+                - кавитационное интенсификация технологических процессов;<br>
+                - переработка органических отходов в удобрение-рекультивант;<br>
+                - промышленной автоматизации.<br><br>
+
+                Задача ООО «Системная инженерия» – индивидуальный инженерный подход к заказчикам, с учётом потребностей и возможностей.
+                <br><br>
+                Часть работ могут выполнятся самими заказчиками при шеф-монтажном сопровождении ООО «Системная инженерия».
+                <br>
+                <br><br>
+            </p>
+        </div>
+        <div class="col-md-4">
+            <img src="~/Content/images/logo3.png" alt="" width="100%" height="100%">
+            <!-- <h4><a href="#">Подробнее</a></h4> -->
+        </div>
+    </section>
+
+    <section class="waterclean">
+        <div class="col-md-12 body">
+            <div class="img-overlay"></div>
+            <h1>Системы водоочистки</h1>
+            <p class="centertext">Мы делаем невероятные суперводокачки для твоей качки в зале</p>
+            <div class="col-md-1"></div>
+            <div class="col-md-3 element">
+                <a href="#" style="color: black; text-decoration: none;">
+                    <div class="img">
+                        <img src="~/Content/images/wat_el.jpg" width="100%" alt="">
+                    </div>
+                    <div class="text">
+                        <p>Супер-мега крутой водокачка</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 element">
+                <a href="#" style="color: black; text-decoration: none;">
+                    <div class="img">
+                        <img src="~/Content/images/wat_el.jpg" width="100%" alt="">
+                    </div>
+                    <div class="text">
+                        <p>Супер-мега крутой водокачка</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 element">
+                <a href="#" style="color: black; text-decoration: none;">
+                    <div class="img">
+                        <img src="~/Content/images/wat_el.jpg" width="100%" alt="">
+                    </div>
+                    <div class="text">
+                        <p>Супер-мега крутой водокачка</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-1">
+
+            </div>
+            <div class="" style="text-align:center;">
+                <button type="button" class="btn btn-default">Подробнее...</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="news">
+        <div class="col-md-12 body">
+            <div class="img-overlay"></div>
+            <a href="#"><h1>Последние статьи</h1></a>
+            <p class="lefttext">Мы делаем невероятные суперводокачки для твоей качки в зале</p>
+            <div class="col-md-1">
+
+            </div>
+            <div class="col-md-3 element">
+                <div class="img">
+                    <img src="~/Content/images/wat_el.jpg" width="100%" alt="">
+                </div>
+                <div class="text">
+                    <a href="#" style="color: black;"><h3>Заголовок суперстатьи</h3></a>
+                    <p>Супер-мега крутой водокачка оводокачечкие ололо молодец тако ий дальше пиши еще раз давайка ага опа жопа</p>
+                    <i>2016-02-12</i>
+                    <span style="margin-left: 90px;"><a href="#">Подробнее...</a></span>
+                </div>
+            </div>
+
+            <div class="col-md-3 element">
+                <div class="img">
+                    <img src="~/Content/images/wat_el.jpg" width="100%" alt="">
+                </div>
+                <div class="text">
+                    <a href="#" style="color: black;"><h3>Заголовок суперстатьи</h3></a>
+                    <p>Супер-мега крутой водокачка оводокачечкие ололо молодец тако ий дальше пиши еще раз давайка ага опа жопа</p>
+                    <i>2016-02-12</i>
+                    <span style="margin-left: 90px;"><a href="#">Подробнее...</a></span>
+                </div>
+            </div>
+
+            <div class="col-md-3 element">
+                <div class="img">
+                    <img src="~/Content/images/wat_el.jpg" width="100%" alt="">
+                </div>
+                <div class="text">
+                    <a href="#" style="color: black;"><h3>Заголовок суперстатьи</h3></a>
+                    <p>Супер-мега крутой водокачка оводокачечкие ололо молодец тако ий дальше пиши еще раз давайка ага опа жопа</p>
+                    <i>2016-02-12</i>
+                    <span style="margin-left: 90px;"><a href="#">Подробнее...</a></span>
+                </div>
+            </div>
+
+            <div class="col-md-1">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="auto">
+        <div class="col-md-12 body">
+            <h1 class="aut-text">Системы атоматизации по</h1>
+            <p class="centertext">Мы делаем невероятные суперводокачки для твоей качки в зале</p>
+            <div class="col-md-1">
+
+            </div>
+            <div class="col-md-3 element">
+                <a href="#" style="color: black; text-decoration: none;">
+                    <div class="img">
+                        <img src="~/Content/images/wat_el.jpg" width="100%" alt="">
+                    </div>
+                    <div class="text">
+                        <p>Супер-мега крутой водокачка</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 element">
+                <a href="#" style="color: black; text-decoration: none;">
+                    <div class="img">
+                        <img src="~/Content/images/wat_el.jpg" width="100%" alt="">
+                    </div>
+                    <div class="text">
+                        <p>Супер-мега крутой водокачка</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 element element-hide">
+                <a href="#" style="color: black; text-decoration: none;">
+                    <div class="img">
+                        <img src="~/Content/images/wat_el.jpg" width="100%" alt="">
+                    </div>
+                    <div class="text">
+                        <p>H Супер-мега крутой водокачка H</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-1">
+
+            </div>
+            <div class="" style="text-align:center;">
+                <button type="button" class="btn btn-default">Подробнее...</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="parthners">
+        <div class="col-md-12 body">
+            <h2>Наши партнеры</h2>
+            <div class="col-md-1"></div>
+            <div class="col-md-2 parthner">
+                <div class="img">
+                    <a target="_blank" href="http://1ak.by/"><img src="~/Content/images/pak.png" width="100%" alt=""></a>
+                </div>
+            </div>
+
+            <div class="col-md-2 parthner">
+                <div class="img">
+                    <a target="_blank" href="http://bit-splav.by/"><img src="~/Content/images/splav.png" width="100%" alt=""></a>
+                </div>
+            </div>
+
+
+            <div class="col-md-2 parthner">
+                <div class="img">
+                    <a target="_blank" href="http://www.omz.by/"><img src="~/Content/images/omz1.png" width="100%" alt=""></a>
+                </div>
+            </div>
+
+            <div class="col-md-2 parthner">
+                <div class="img">
+                    <a target="_blank" href="http://www.demetra.by/"><img src="~/Content/images/dem.png" width="100%" alt=""></a>
+                </div>
+            </div>
+
+            <div class="col-md-2 parthner">
+                <div class="img">
+                    <a target="_blank" href="http://www.polessu.by/"><img src="~/Content/images/wat_el.jpg" width="100%" alt=""></a>
+                </div>
+            </div>
+
+            <div class="col-md-1"></div>
+        </div>
+    </section>
+
+    <section class="feedback">
+        <div class="col-md-12 body">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h2>Контактная форма</h2>
+                <form role="form">
+                    <div class="form-group">
+                        <label for="name">Имя</label>
+                        <input name="name" type="text" class="form-control" placeholder="Имя" required />
+                        <p class="help-block">Введите Ваше имя</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input name="email" type="email" class="form-control" placeholder="E-mail" required />
+                        <p class="help-block">Введите Ваш электронный адресс</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Сообщение</label>
+                        <textarea name="comment" class="form-control" placeholder="Сообщение" required></textarea>
+                        <p class="help-block">Введите Ваше сообщение. В ближайшее время мы Вам ответим.</p>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-info" value="Отправить" />
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-2"></div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="col-md-12 body">
+            <div class="col-md-1"></div>
+
+            <div class="col-md-3 block bloackbl">
+                <h2>Системы водоочистки</h2>
+                <p>Проводим системы водочистки и водокачки для подкачки бицухи и грудака</p>
+            </div>
+
+            <div class="col-md-3 block">
+                <h2>Контакты</h2>
+                <p><span class="glyphicon glyphicon-earphone"></span> +375 44 465 86 10</p>
+                <p><span class="glyphicon glyphicon-earphone"></span> +375 44 465 73 14</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> p.burik@pinsk.1ak.by</p>
+                <p><span class="glyphicon glyphicon-home"></span> Республика Беларусь, г. Пинск, ул. Брестская д. 72</p>
+            </div>
+
+            <div class="col-md-3 block bloackbl">
+                <h2>Системы водоочистки</h2>
+                <p>Проводим системы водочистки и водокачки для подкачки бицухи и грудака</p>
+            </div>
+            <div class="col-md-1"></div>
+
+            <div class="container">
+                <ul id="ul" class="nav navbar-nav  footul">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Проекты</a></li>
+                    <li><a href="#">Статьи</a></li>
+                    <li><a href="#">Решения</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <script type="text/javascript">
+    $("#button").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#aboutus").offset().top
+        }, 2000);
+    });
+    </script>
+
+</body>
+</html>
