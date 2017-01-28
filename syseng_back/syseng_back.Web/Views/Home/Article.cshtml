@@ -33,9 +33,7 @@
                 <i>@ViewBag.Article.Date</i>
                 <br>
                 <br>
-                <p>
-                    @ViewBag.Article.Body
-                </p>
+                    @Html.Raw(ViewBag.Article.Body)
             </div>
             <hr>
         </div>
