@@ -21,11 +21,10 @@
                     <img src="~/Content/images/@article.ImageUrl" width="40%" alt="">
                 </div>
                 <div class="content right">
-                    
-                    <h1>@Html.ActionLink("s", "Article", "Home", new { id = article.Id }, new { @class = "header-link" })</h1>
+                    <h1><a href="../home/article/@article.Id" class = "header-link">@article.Title</a></h1>
                     <i>@article.Date</i>
                     <p>@article.ShortBody</p>
-                    @Html.ActionLink("Подробнее", "Article", "Home", new { id = article.Id }, new { @class = "link" })
+                    @Html.ActionLink("Подробнее", "article", "home", new { id = article.Id }, new { @class = "link" })
                 </div>
                 <hr>
             </div>

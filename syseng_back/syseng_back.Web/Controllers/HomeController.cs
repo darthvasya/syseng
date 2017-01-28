@@ -10,18 +10,18 @@ using System.Web.Mvc;
 
 namespace syseng_back.Web.Controllers
 {
-    public class HomeController : Controller
+    public class homeController : Controller
     {
         IArticleService _articleService;
         IProjectService _projectService;
 
-        public HomeController(IArticleService articleService, IProjectService projectService)
+        public homeController(IArticleService articleService, IProjectService projectService)
         {
             this._articleService = articleService;
             this._projectService = projectService;
         }
 
-        public ActionResult Index()
+        public ActionResult index()
         {
             IEnumerable<ArticleDTO> articlesDtos = _articleService.GetArticles().Take(3);
             Mapper.Initialize(c => c.CreateMap<ArticleDTO, ArticleViewModel>());
@@ -36,7 +36,7 @@ namespace syseng_back.Web.Controllers
             return View();
         }
 
-        public ActionResult Articles()
+        public ActionResult articles()
         {
             IEnumerable<ArticleDTO> articlesDtos = _articleService.GetArticles();
             Mapper.Initialize(c => c.CreateMap<ArticleDTO, ArticleViewModel>());
@@ -45,7 +45,7 @@ namespace syseng_back.Web.Controllers
             return View();
         }
 
-        public ActionResult Article(int id)
+        public ActionResult article(int id)
         {
             ArticleDTO articleDtos = _articleService.GetArticle(id);
             Mapper.Initialize(c => c.CreateMap<ArticleDTO, ArticleViewModel>());
@@ -54,7 +54,7 @@ namespace syseng_back.Web.Controllers
             return View();
         }
 
-        public ActionResult Project(int id)
+        public ActionResult project(int id)
         {
             ProjectDTO projectDtos = _projectService.GetProject(id);
             Mapper.Initialize(c => c.CreateMap<ProjectDTO, ProjectViewModel>());
@@ -63,7 +63,7 @@ namespace syseng_back.Web.Controllers
             return View();
         }
 
-        public ActionResult Projects()
+        public ActionResult projects()
         {
             IEnumerable<ProjectDTO> projectsDtos = _projectService.GetProjects();
             Mapper.Initialize(c => c.CreateMap<ProjectDTO, ProjectViewModel>());
@@ -72,12 +72,12 @@ namespace syseng_back.Web.Controllers
             return View();
         }
 
-        public ActionResult Automation()
+        public ActionResult automation()
         {
             return View();
         }
 
-        public ActionResult Waterclean()
+        public ActionResult waterclean()
         {
             return View();
         }

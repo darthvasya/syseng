@@ -33,12 +33,12 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul id="ul" class="nav navbar-nav navbar-right mainheader">
-                    <li>@Html.ActionLink("Главная", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Проекты", "Projects", "Home")</li>
-                    <li>@Html.ActionLink("Статьи", "Articles", "Home")</li>
-                    <li>@Html.ActionLink("Водоочистка", "Articles", "Home")</li>
-                    <li>@Html.ActionLink("Автоматизация", "Automation", "Home")</li>
-                    <li>@Html.ActionLink("Контакты", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Главная", "index", "home")</li>
+                    <li>@Html.ActionLink("Проекты", "projects", "home")</li>
+                    <li>@Html.ActionLink("Статьи", "articles", "home")</li>
+                    <li>@Html.ActionLink("Автоматизация", "automation", "home")</li>
+                    <li>@Html.ActionLink("Водоочистка", "waterclean", "home")</li>
+                    <li>@Html.ActionLink("Контакты", "contacts", "home")</li>
                 </ul>
 
             </div>
@@ -85,7 +85,7 @@
                 //if (proj.ProjectTypeId == 2)
                 //{
                 <div class="col-md-3 element">
-                    <a href="../Home/Project/@proj.Id" style="color: black; text-decoration: none;">
+                    <a href="../home/project/@proj.Id" style="color: black; text-decoration: none;">
                         <div class="img">
                             <img src="~/Content/images/@proj.ImageUrl" width="100%" alt="">
                         </div>
@@ -99,9 +99,9 @@
             <div class="col-md-1">
 
             </div>
-            <div class="" style="text-align:center;">
+            @*<div class="" style="text-align:center;">
                 <button type="button" class="btn btn-default">Подробнее...</button>
-            </div>
+            </div>*@
         </div>
 
     </section>
@@ -126,7 +126,7 @@
                         <h3>"@article.Title"</h3>
                         <p>@article.ShortBody</p>
                         <i>@article.Date.ToShortDateString()</i>
-                        <span style="margin-left: 90px;">@Html.ActionLink("Подробнее", "Article", "Home", new { id = article.Id }, null)</span>
+                        <span style="margin-left: 90px;">@Html.ActionLink("Подробнее", "article", "home", new { id = article.Id }, null)</span>
                     </div>
                 </div>
             }
@@ -265,12 +265,12 @@
 
             <div class="container">
                 <ul id="ul" class="nav navbar-nav  footul">
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">Проекты</a></li>
-                    <li><a href="#">Статьи</a></li>
-                    <li><a href="#">Решения</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li>@Html.ActionLink("Главная", "index", "home")</li>
+                    <li>@Html.ActionLink("Проекты", "projects", "home")</li>
+                    <li>@Html.ActionLink("Статьи", "articles", "home")</li>
+                    <li>@Html.ActionLink("Автоматизация", "automation", "home")</li>
+                    <li>@Html.ActionLink("Водоочистка", "waterclean", "home")</li>
+                    <li>@Html.ActionLink("Контакты", "contacts", "home")</li>
                 </ul>
             </div>
         </div>
