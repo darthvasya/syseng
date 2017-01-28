@@ -81,5 +81,10 @@ namespace syseng_back.Web.Controllers
         {
             return View();
         }
+
+        public ActionResult contacts()
+        {
+            return View();
+        }
     }
 }

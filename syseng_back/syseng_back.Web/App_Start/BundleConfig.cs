@@ -10,9 +10,6 @@ namespace syseng_back.Web
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
-                        "~/Scripts/jquery.validate*"));
-
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
@@ -20,25 +17,24 @@ namespace syseng_back.Web
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
-            bundles.Add(new StyleBundle("~/Content/index").Include(
+            bundles.Add(new StyleBundle("~/Content/core").Include(
                       "~/Content/bootstrap.min.css",
-                      "~/Content/css/master.css",
+                      "~/Content/css/master.css"));
+
+            bundles.Add(new StyleBundle("~/Content/index").Include(
                       "~/Content/css/index-page.css"));
 
             bundles.Add(new StyleBundle("~/Content/articles").Include(
-                      "~/Content/bootstrap.min.css",
-                      "~/Content/css/master.css",
                       "~/Content/css/articles-page.css"));
 
             bundles.Add(new StyleBundle("~/Content/automation").Include(
-                      "~/Content/bootstrap.min.css",
-                      "~/Content/css/master.css",
                       "~/Content/css/automation-page.css"));
 
             bundles.Add(new StyleBundle("~/Content/waterclean").Include(
-                      "~/Content/bootstrap.min.css",
-                      "~/Content/css/master.css",
                       "~/Content/css/water-page.css"));
+
+            bundles.Add(new StyleBundle("~/Content/cotnact").Include(
+                      "~/Content/css/contact-page.css"));
         }
     }
 }

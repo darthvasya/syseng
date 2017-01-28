@@ -6,36 +6,31 @@
 
 
 <div class="parallax head-window">
-    <!-- <h1><span class="ooo">ООО «Системная инженерия»</span> <br>предоставляет заказчикам комплексные решения в направлениях ориентированных на повышение ресурсоэффективности и экологической безопасности</h1> -->
-    <!-- <button type="button" class="btn btn-default">Начать</button> -->
     <h2>Наши проекты</h2>
 </div>
 
 <section class="articles">
-    @foreach (var project in ViewBag.Projects)
-    {
-        <div class="col-md-12 article">
-            <div class="col-md-1"></div>
-            <div class="col-md-10 main">
-                <div class="image left">
-                    <img src="~/Content/images/@project.ImageUrl" width="40%" alt="">
-                </div>
-                <div class="content right">
+    <div class="container">
+        <div class="row">
+        @foreach (var project in ViewBag.Projects)
+        {
+            <div class="col-md-4 element project">
+                <a href="../Home/Project/@project.Id" style="color: black; text-decoration: none;">
+                    <div class="text">
+                        <p>@project.Title</p>
+                    </div>
+                    <div class="img">
+                        <img src="~/Content/images/@project.ImageUrl" width="100%" alt="">
+                    </div>
 
-                    <h1><a href="../Home/Project/@project.Id" class="header-link">@project.Title</a></h1>
-                    <hr />
-                    <i>@project.Date.ToShortDateString()</i>
-                    
-                    <p>@project.Customer</p>
-                   @* @Html.ActionLink("Подробнее", "Project", "Home", new { id = project.Id }, new { @class = "link" })*@
-                </div>
-                <hr>
+                </a>
             </div>
-            <div class="col-md-1"></div>
+        }
         </div>
-    }
+    </div>
 </section>
-
+<br />
+<br />
 
 
 
