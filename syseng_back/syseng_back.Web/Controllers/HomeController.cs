@@ -86,5 +86,14 @@ namespace syseng_back.Web.Controllers
         {
             return View();
         }
+
+
+
+        [HttpPost]
+        public JsonResult mail(ContactFromModel model)
+        {
+            string response = "Ok";
+            return Json(response);
+        }
     }
 }

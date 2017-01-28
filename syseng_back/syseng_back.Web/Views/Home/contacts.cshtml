@@ -34,21 +34,24 @@
             <form role="form">
                 <div class="form-group">
                     <label for="name">Имя</label>
-                    <input name="name" type="text" class="form-control" placeholder="Имя" required />
+                    <input id="name" name="name" type="text" class="form-control" placeholder="Имя" required />
                     <p class="help-block">Введите Ваше имя</p>
                 </div>
                 <div class="form-group">
                     <label for="email">E-mail</label>
-                    <input name="email" type="email" class="form-control" placeholder="E-mail" required />
+                    <input id="email" name="email" type="email" class="form-control" placeholder="E-mail" required />
                     <p class="help-block">Введите Ваш электронный адресс</p>
                 </div>
                 <div class="form-group">
                     <label for="comment">Сообщение</label>
-                    <textarea name="comment" class="form-control" placeholder="Сообщение" required></textarea>
+                    <textarea id="body" name="comment" class="form-control" placeholder="Сообщение" required></textarea>
                     <p class="help-block">Введите Ваше сообщение. В ближайшее время мы Вам ответим.</p>
                 </div>
                 <div class="form-group">
-                    <input type="submit" class="btn btn-info" value="Отправить" />
+                    <input type="button" id="send" class="btn btn-info" value="Отправить" />
+                </div>
+                <div id="contact-block">
+
                 </div>
             </form>
         </div>
