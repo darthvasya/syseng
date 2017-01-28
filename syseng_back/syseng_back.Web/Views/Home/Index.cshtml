@@ -78,17 +78,22 @@
             <h1>Системы водоочистки</h1>
             <p class="centertext">Мы делаем невероятные суперводокачки для твоей качки в зале</p>
             <div class="col-md-1"></div>
-            <div class="col-md-3 element">
-                <a href="#" style="color: black; text-decoration: none;">
-                    <div class="img">
-                        <img src="~/Content/images/wat_el.jpg" width="100%" alt="">
+            @foreach (var proj in ViewBag.Projects)
+            {
+                if (proj.ProjectTypeId == 2)
+                {
+                    <div class="col-md-3 element">
+                        <a href="../Home/Project/@proj.Id" style="color: black; text-decoration: none;">
+                            <div class="img">
+                                <img src="~/Content/images/@proj.ImageUrl" width="100%" alt="">
+                            </div>
+                            <div class="text">
+                                <p>@proj.Title</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="text">
-                        <p>Супер-мега крутой водокачка</p>
-                    </div>
-                </a>
-            </div>
-     
+                }
+            }
             <div class="col-md-1">
 
             </div>
@@ -137,36 +142,23 @@
             <div class="col-md-1">
 
             </div>
-            <div class="col-md-3 element">
-                <a href="#" style="color: black; text-decoration: none;">
-                    <div class="img">
-                        <img src="~/Content/images/wat_el.jpg" width="100%" alt="">
+
+            @foreach (var proj in ViewBag.Projects)
+            {
+                if (proj.ProjectTypeId == 1)
+                {
+                    <div class="col-md-3 element">
+                        <a href="../Home/Project/@proj.Id" style="color: black; text-decoration: none;">
+                            <div class="img">
+                                <img src="~/Content/images/@proj.ImageUrl" width="100%" alt="">
+                            </div>
+                            <div class="text">
+                                <p>@proj.Title</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="text">
-                        <p>Супер-мега крутой водокачка</p>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-3 element">
-                <a href="#" style="color: black; text-decoration: none;">
-                    <div class="img">
-                        <img src="~/Content/images/wat_el.jpg" width="100%" alt="">
-                    </div>
-                    <div class="text">
-                        <p>Супер-мега крутой водокачка</p>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-3 element element-hide">
-                <a href="#" style="color: black; text-decoration: none;">
-                    <div class="img">
-                        <img src="~/Content/images/wat_el.jpg" width="100%" alt="">
-                    </div>
-                    <div class="text">
-                        <p>H Супер-мега крутой водокачка H</p>
-                    </div>
-                </a>
-            </div>
+                }
+            }
             <div class="col-md-1">
 
             </div>
