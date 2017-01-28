@@ -29,6 +29,16 @@ namespace syseng_back.Web
                       "~/Content/bootstrap.min.css",
                       "~/Content/css/master.css",
                       "~/Content/css/articles-page.css"));
+
+            bundles.Add(new StyleBundle("~/Content/automation").Include(
+                      "~/Content/bootstrap.min.css",
+                      "~/Content/css/master.css",
+                      "~/Content/css/automation-page.css"));
+
+            bundles.Add(new StyleBundle("~/Content/waterclean").Include(
+                      "~/Content/bootstrap.min.css",
+                      "~/Content/css/master.css",
+                      "~/Content/css/water-page.css"));
         }
     }
 }

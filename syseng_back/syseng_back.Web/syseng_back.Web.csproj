@@ -190,7 +190,6 @@
     </Content>
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\css\articles-page.css" />
-    <Content Include="Content\css\automation-2-page.css" />
     <Content Include="Content\css\automation-page.css" />
     <Content Include="Content\css\contact-page.css" />
     <Content Include="Content\css\index-page.css" />
@@ -311,6 +310,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Project.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Automation.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Waterclean.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

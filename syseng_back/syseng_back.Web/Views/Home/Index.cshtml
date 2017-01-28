@@ -35,8 +35,9 @@
                     <li>@Html.ActionLink("Главная", "Index", "Home")</li>
                     <li>@Html.ActionLink("Проекты", "Projects", "Home")</li>
                     <li>@Html.ActionLink("Статьи", "Articles", "Home")</li>
+                    <li>@Html.ActionLink("Водоочистка", "Articles", "Home")</li>
+                    <li>@Html.ActionLink("Автоматизация", "Automation", "Home")</li>
                     <li>@Html.ActionLink("Контакты", "Contact", "Home")</li>
-                    <li><a href="#">Контакты</a></li>
                 </ul>
 
             </div>
@@ -75,24 +76,24 @@
     <section class="waterclean">
         <div class="col-md-12 body">
             <div class="img-overlay"></div>
-            <h1>Системы водоочистки</h1>
+            <h1>Наши проекты</h1>
             <p class="centertext">Мы делаем невероятные суперводокачки для твоей качки в зале</p>
             <div class="col-md-1"></div>
             @foreach (var proj in ViewBag.Projects)
             {
-                if (proj.ProjectTypeId == 2)
-                {
-                    <div class="col-md-3 element">
-                        <a href="../Home/Project/@proj.Id" style="color: black; text-decoration: none;">
-                            <div class="img">
-                                <img src="~/Content/images/@proj.ImageUrl" width="100%" alt="">
-                            </div>
-                            <div class="text">
-                                <p>@proj.Title</p>
-                            </div>
-                        </a>
-                    </div>
-                }
+                //if (proj.ProjectTypeId == 2)
+                //{
+                <div class="col-md-3 element">
+                    <a href="../Home/Project/@proj.Id" style="color: black; text-decoration: none;">
+                        <div class="img">
+                            <img src="~/Content/images/@proj.ImageUrl" width="100%" alt="">
+                        </div>
+                        <div class="text">
+                            <p>@proj.Title</p>
+                        </div>
+                    </a>
+                </div>
+                //}
             }
             <div class="col-md-1">
 
@@ -135,7 +136,7 @@
         </div>
     </section>
 
-    <section class="auto">
+    @*<section class="auto">
         <div class="col-md-12 body">
             <h1 class="aut-text">Системы атоматизации по</h1>
             <p class="centertext">Мы делаем невероятные суперводокачки для твоей качки в зале</p>
@@ -166,7 +167,7 @@
                 <button type="button" class="btn btn-default">Подробнее...</button>
             </div>
         </div>
-    </section>
+    </section>*@
 
     <section class="parthners">
         <div class="col-md-12 body">

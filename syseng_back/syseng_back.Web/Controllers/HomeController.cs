@@ -71,5 +71,15 @@ namespace syseng_back.Web.Controllers
             ViewBag.Projects = projects;
             return View();
         }
+
+        public ActionResult Automation()
+        {
+            return View();
+        }
+
+        public ActionResult Waterclean()
+        {
+            return View();
+        }
     }
 }
