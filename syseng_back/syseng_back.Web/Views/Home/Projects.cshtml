@@ -8,24 +8,26 @@
 <div class="parallax head-window">
     <!-- <h1><span class="ooo">ООО «Системная инженерия»</span> <br>предоставляет заказчикам комплексные решения в направлениях ориентированных на повышение ресурсоэффективности и экологической безопасности</h1> -->
     <!-- <button type="button" class="btn btn-default">Начать</button> -->
-    <h2>Наши статьи</h2>
+    <h2>Наши проекты</h2>
 </div>
 
 <section class="articles">
-    @foreach (var article in ViewBag.Articles)
+    @foreach (var project in ViewBag.Projects)
     {
         <div class="col-md-12 article">
             <div class="col-md-1"></div>
             <div class="col-md-10 main">
                 <div class="image left">
-                    <img src="~/Content/images/@article.ImageUrl" width="40%" alt="">
+                    <img src="~/Content/images/@project.ImageUrl" width="40%" alt="">
                 </div>
                 <div class="content right">
 
-                    <h1>@Html.ActionLink("s", "Article", "Home", new { id = article.Id }, new { @class = "header-link" })</h1>
-                    <i>@article.Date</i>
-                    <p>@article.ShortBody</p>
-                    @Html.ActionLink("Подробнее", "Article", "Home", new { id = article.Id }, new { @class = "link" })
+                    <h1><a href="../Home/Project/@project.Id" class="header-link">@project.Title</a></h1>
+                    <hr />
+                    <i>@project.Date.ToShortDateString()</i>
+                    
+                    <p>@project.Customer</p>
+                   @* @Html.ActionLink("Подробнее", "Project", "Home", new { id = project.Id }, new { @class = "link" })*@
                 </div>
                 <hr>
             </div>

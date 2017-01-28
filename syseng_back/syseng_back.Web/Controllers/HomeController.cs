@@ -62,5 +62,14 @@ namespace syseng_back.Web.Controllers
             ViewBag.Project = project;
             return View();
         }
+
+        public ActionResult Projects()
+        {
+            IEnumerable<ProjectDTO> projectsDtos = _projectService.GetProjects();
+            Mapper.Initialize(c => c.CreateMap<ProjectDTO, ProjectViewModel>());
+            var projects = Mapper.Map<IEnumerable<ProjectDTO>, List<ProjectViewModel>>(projectsDtos);
+            ViewBag.Projects = projects;
+            return View();
+        }
     }
 }
