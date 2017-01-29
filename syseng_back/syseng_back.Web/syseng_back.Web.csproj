@@ -200,43 +200,37 @@
     <Content Include="Content\images\comp.jpg" />
     <Content Include="Content\images\dem.png" />
     <Content Include="Content\images\dirty-industry-stack-factory.jpg" />
+    <Content Include="Content\images\energo.jpg" />
     <Content Include="Content\images\fon.jpg" />
     <Content Include="Content\images\fon2.jpg" />
     <Content Include="Content\images\korovki.jpg" />
-    <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\kran.jpg" />
     <Content Include="Content\images\logo3.png" />
     <Content Include="Content\images\logo_krugloe3.jpg" />
-    <Content Include="Content\images\man-people-space-desk%281%29.jpg" />
     <Content Include="Content\images\man-people-space-desk.jpg" />
-    <Content Include="Content\images\omz.png" />
+    <Content Include="Content\images\men.jpg" />
     <Content Include="Content\images\omz1.png" />
     <Content Include="Content\images\pak.png" />
     <Content Include="Content\images\pexels-photo %284%29.jpg" />
     <Content Include="Content\images\pexels-photo %285%29.jpg" />
     <Content Include="Content\images\pexels-photo-110469-1.jpg" />
     <Content Include="Content\images\pexels-photo-110469.jpg" />
-    <Content Include="Content\images\pexels-photo-165985.jpg" />
-    <Content Include="Content\images\pexels-photo-24257-ieu8735-fr.png" />
-    <Content Include="Content\images\pexels-photo-24257.jpg" />
-    <Content Include="Content\images\pexels-photo-26939-ieu8750-fr.png" />
-    <Content Include="Content\images\pexels-photo-26939.jpg" />
     <Content Include="Content\images\pexels-photo-40120.jpg" />
     <Content Include="Content\images\pexels-photo-57007%281%29.jpg" />
     <Content Include="Content\images\pexels-photo-57007.jpg" />
-    <Content Include="Content\images\pexels-photo-87383.jpg" />
-    <Content Include="Content\images\pexels-photo-ieu8732-fr.png" />
     <Content Include="Content\images\pexels-photo.jpg" />
+    <Content Include="Content\images\pol.png" />
     <Content Include="Content\images\services.jpg" />
-    <Content Include="Content\images\shutterstock_178188626.jpg" />
     <Content Include="Content\images\smoke.jpg" />
     <Content Include="Content\images\splav.png" />
     <Content Include="Content\images\technology-computer-metal-industry-163150.jpg" />
-    <Content Include="Content\images\water-kitchen-black-design.jpg" />
+    <Content Include="Content\images\voda.jpg" />
     <Content Include="Content\images\waterback.jpg" />
     <Content Include="Content\images\waterback2.jpg" />
     <Content Include="Content\images\water_treatment_system.jpg" />
     <Content Include="Content\images\wat_el.jpg" />
     <Content Include="Content\images\рисунок11.jpg" />
+    <Content Include="Content\js\email.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -321,6 +315,16 @@
   <ItemGroup>
     <Content Include="Views\Home\contacts.cshtml" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Opisanie_tekhnologii_Vodoochistka.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Vodoochistka.docx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\sd.pubxml" />
+  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

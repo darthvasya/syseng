@@ -17,6 +17,7 @@ namespace syseng_back.Web.App_Start
                 AuthenticationType = "ApplicationCookie",
                 LoginPath = new PathString("/Account/Login"),
             });
+
         }
     }
 }

@@ -14,7 +14,7 @@
     <div class="col-md-12">
         <div class="col-md-1"></div>
         <div class="col-md-10 main">
-            <a href="../projects" style="color: black; text-decoration: none;"><h3><span class="glyphicon glyphicon-arrow-left"></span> Статьи</h3></a>
+            <a href="../projects" style="color: black; text-decoration: none;"><h3><span class="glyphicon glyphicon-arrow-left"></span> Проекты</h3></a>
         </div>
     </div>
 </section>
@@ -32,9 +32,7 @@
                 <i>@ViewBag.Project.Date</i>
                 <br>
                 <br>
-                <p>
-                    @ViewBag.Project.Body
-                </p>
+                @Html.Raw(ViewBag.Project.Body)
             </div>
             <hr>
         </div>
@@ -46,7 +44,7 @@
     <div class="col-md-12">
         <div class="col-md-1"></div>
         <div class="col-md-10 main">
-            <a href="../projects" style="color: black; text-decoration: none;"><h3><span class="glyphicon glyphicon-arrow-left"></span> Статьи</h3></a>
+            <a href="../projects" style="color: black; text-decoration: none;"><h3><span class="glyphicon glyphicon-arrow-left"></span> Проекты</h3></a>
         </div>
     </div>
 </section>

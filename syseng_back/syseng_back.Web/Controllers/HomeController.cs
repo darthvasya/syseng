@@ -88,7 +88,6 @@ namespace syseng_back.Web.Controllers
         }
 
 
-
         [HttpPost]
         public JsonResult mail(ContactFromModel model)
         {

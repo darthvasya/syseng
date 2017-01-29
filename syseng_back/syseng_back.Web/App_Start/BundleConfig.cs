@@ -17,6 +17,9 @@ namespace syseng_back.Web
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/mail").Include(
+                      "~/Content/js/email.js"));
+
             bundles.Add(new StyleBundle("~/Content/core").Include(
                       "~/Content/bootstrap.min.css",
                       "~/Content/css/master.css"));
