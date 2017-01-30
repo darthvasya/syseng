@@ -5,7 +5,7 @@
     margin-top: -40px;
     /* The image used */
 
-    background-image: url("../images/fon.jpg");
+    background-image: url("images/fon.jpg");
     background-repeat: no-repeat;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
