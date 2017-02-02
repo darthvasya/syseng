@@ -178,6 +178,7 @@
     <Compile Include="Models\ArticleViewModel.cs" />
     <Compile Include="Models\ContactFromModel.cs" />
     <Compile Include="Models\IdentityExtensions.cs" />
+    <Compile Include="Models\LeadViewModel.cs" />
     <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\ProjectViewModel.cs" />
     <Compile Include="Models\UserViewModel.cs" />

@@ -89,11 +89,21 @@ namespace syseng_back.Web.Controllers
             return View();
         }
 
-
         [HttpPost]
-        public JsonResult mail(ContactFromModel model)
+        public JsonResult mail(LeadViewModel model)
         {
             string response = "Ok";
+            try
+            {
+                Mapper.Initialize(c => c.CreateMap<LeadViewModel, LeadDTO>());
+                var lead = Mapper.Map<LeadViewModel, LeadDTO>(model);
+                _leadService.AddLead(lead);
+            }
+            catch
+            {
+                return Json("No");
+            }
+
             return Json(response);
         }
     }

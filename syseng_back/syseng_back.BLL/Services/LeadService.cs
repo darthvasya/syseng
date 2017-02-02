@@ -23,6 +23,7 @@ namespace syseng_back.BLL.Services
 
         public void AddLead(LeadDTO lead)
         {
+            lead.Date = DateTime.Now;
             Mapper.Initialize(c => c.CreateMap<LeadDTO, Lead>());
             _context.Leads.Create(Mapper.Map<LeadDTO, Lead>(lead));
         }
