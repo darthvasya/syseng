@@ -54,7 +54,19 @@ namespace syseng_back.BLL.Services
 
         public UserDTO CreateUser(string email, string password, int roleId)
         {
-            throw new NotImplementedException();
+            //Mapper.Initialize(c => c.CreateMap<User, UserDTO>());
+            //IEnumerable<UserDTO> users =  Mapper.Map<IEnumerable<User>, List<UserDTO>>(context.Users.GetAll());
+
+            //UserDTO userDTO = users.Where(p => p.Email == email && p.Password == password).FirstOrDefault();
+            //if (user == null)
+            //{
+
+            //    user.Email = email;
+            //    user.Password = password;
+            //    user.RoleId = roleId;
+            //    context.Users.Create(user);
+            //}
+            return null;
         }
     }
 }
