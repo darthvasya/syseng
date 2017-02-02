@@ -1,5 +1,6 @@
 namespace syseng_back.DAL.Migrations
 {
+    using Entities;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
@@ -19,12 +20,12 @@ namespace syseng_back.DAL.Migrations
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data. E.g.
             //
-            //    context.People.AddOrUpdate(
-            //      p => p.FullName,
-            //      new Person { FullName = "Andrew Peters" },
-            //      new Person { FullName = "Brice Lambson" },
-            //      new Person { FullName = "Rowan Miller" }
-            //    );
+                context.Leads.AddOrUpdate(
+                  p => p.Name,
+                  new Lead { Name = "Andrew Peters", Body = "s", Date = DateTime.Now, Email = "s" },
+                  new Lead { Name = "Brice Lambson", Body = "s", Date = DateTime.Now, Email = "s" },
+                  new Lead { Name = "Rowan Miller", Body = "s", Date = DateTime.Now, Email = "s" }
+                );
             //
         }
     }

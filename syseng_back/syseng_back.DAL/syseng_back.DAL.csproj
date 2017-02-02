@@ -74,6 +74,14 @@
     <Compile Include="Migrations\201702021634361_Add Leads.Designer.cs">
       <DependentUpon>201702021634361_Add Leads.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702021658533_Add Leads1.cs" />
+    <Compile Include="Migrations\201702021658533_Add Leads1.Designer.cs">
+      <DependentUpon>201702021658533_Add Leads1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702021703283_Add Leads2.cs" />
+    <Compile Include="Migrations\201702021703283_Add Leads2.Designer.cs">
+      <DependentUpon>201702021703283_Add Leads2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ArticleRepository.cs" />
@@ -100,6 +108,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702021634361_Add Leads.resx">
       <DependentUpon>201702021634361_Add Leads.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702021658533_Add Leads1.resx">
+      <DependentUpon>201702021658533_Add Leads1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702021703283_Add Leads2.resx">
+      <DependentUpon>201702021703283_Add Leads2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

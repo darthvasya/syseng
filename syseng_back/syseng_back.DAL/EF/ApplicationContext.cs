@@ -19,7 +19,8 @@ namespace syseng_back.DAL.EF
 
         static ApplicationContext()
         {
-            Database.SetInitializer<ApplicationContext>(new StoreDbInitializer());
+            //Database.SetInitializer<ApplicationContext>(new StoreDbInitializer());
+            //Database.SetInitializer(new DropCreateDatabaseAlways<ApplicationContext>());
         }
 
         public ApplicationContext(string connectionString)
@@ -28,15 +29,16 @@ namespace syseng_back.DAL.EF
         }
 
         public ApplicationContext()
+            : base("DefaultConnection")
         {
-
         }
+        
 
         public class StoreDbInitializer : DropCreateDatabaseIfModelChanges<ApplicationContext>
         {
             protected override void Seed(ApplicationContext db)
             {
-                //db.Roles.Add(new Role({ Name = "admin" }));
+                //db.Roles.Add(new Role{ Name = "admin", Id = 1 });
                 //db
                 //db.Users.Add(new User { Email = "v@mail.ru", Password = "123456", RoleId = 1 });
                 //db.Users.Add(new User { Email = "n@mail.ru", Password = "123456", RoleId = 1 });
