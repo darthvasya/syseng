@@ -25,17 +25,15 @@ namespace syseng_back.Web.Controllers
 
         public ActionResult index()
         {
-            //IEnumerable<ArticleDTO> articlesDtos = _articleService.GetArticles().Take(3);
-            //Mapper.Initialize(c => c.CreateMap<ArticleDTO, ArticleViewModel>());
-            //var articles = Mapper.Map<IEnumerable<ArticleDTO>, List<ArticleViewModel>>(articlesDtos);
-            //ViewBag.Articles = articles;
+            IEnumerable<ArticleDTO> articlesDtos = _articleService.GetArticles().Take(3);
+            Mapper.Initialize(c => c.CreateMap<ArticleDTO, ArticleViewModel>());
+            var articles = Mapper.Map<IEnumerable<ArticleDTO>, List<ArticleViewModel>>(articlesDtos);
+            ViewBag.Articles = articles;
 
-            //IEnumerable<ProjectDTO> projectsDtos = _projectService.GetProjects();
-            //Mapper.Initialize(c => c.CreateMap<ProjectDTO, ProjectViewModel>());
-            //var projects = Mapper.Map<IEnumerable<ProjectDTO>, List<ProjectViewModel>>(projectsDtos);
-            //ViewBag.Projects = projects;
-            ViewBag.Projects = null;
-            ViewBag.Articles = null;
+            IEnumerable<ProjectDTO> projectsDtos = _projectService.GetProjects();
+            Mapper.Initialize(c => c.CreateMap<ProjectDTO, ProjectViewModel>());
+            var projects = Mapper.Map<IEnumerable<ProjectDTO>, List<ProjectViewModel>>(projectsDtos);
+            ViewBag.Projects = projects;
 
             return View();
         }

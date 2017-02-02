@@ -80,7 +80,7 @@
             <h1>Наши проекты</h1>
             <p class="centertext">Высокоэффективные решения и системы</p>
             <div class="col-md-1"></div>
-            @*@foreach (var proj in ViewBag.Projects)
+            @foreach (var proj in ViewBag.Projects)
             {
                 //if (proj.ProjectTypeId == 2)
                 //{
@@ -95,7 +95,7 @@
                     </a>
                 </div>
                 //}
-            }*@
+            }
             <div class="col-md-1">
 
             </div>
@@ -114,21 +114,22 @@
             <div class="col-md-1">
 
             </div>
-            @*@foreach (var article in ViewBag.Articles)
+            @foreach (var article in ViewBag.Articles)
             {
                 <div class="col-md-3 element">
                     <div class="img">
                         <img src="~/Content/images/@article.ImageUrl" width="100%" alt="">
                     </div>
                     <div class="text">
-=
+                        @*@Html.ActionLink("Подробнееы", "Article", "Home", new { id = article.Id }, null)*@
+                        @*<a href="#" style="color: black;"></a>*@
                         <h3>"@article.Title"</h3>
                         <p>@article.ShortBody</p>
                         <i>@article.Date.ToShortDateString()</i>
                         <span style="margin-left: 90px;">@Html.ActionLink("Подробнее", "article", "home", new { id = article.Id }, null)</span>
                     </div>
                 </div>
-            }*@
+            }
 
             <div class="col-md-1">
 
