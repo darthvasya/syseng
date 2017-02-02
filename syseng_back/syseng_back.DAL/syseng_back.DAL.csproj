@@ -70,6 +70,10 @@
     <Compile Include="Migrations\201701271530323_short body.Designer.cs">
       <DependentUpon>201701271530323_short body.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702021634361_Add Leads.cs" />
+    <Compile Include="Migrations\201702021634361_Add Leads.Designer.cs">
+      <DependentUpon>201702021634361_Add Leads.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ArticleRepository.cs" />
@@ -93,6 +97,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201701271530323_short body.resx">
       <DependentUpon>201701271530323_short body.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702021634361_Add Leads.resx">
+      <DependentUpon>201702021634361_Add Leads.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

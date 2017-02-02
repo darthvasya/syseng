@@ -13,6 +13,7 @@ namespace syseng_back.DAL.Repositories
         private ArticleRepository articleRepository;
         private ProjectRepository projectRepository;
         private ProjectTypesRepository projectTypeRepository;
+        private LeadRepository leadRepository;
 
         public EFUnitOfWork(string connectionString)
         {
@@ -66,6 +67,16 @@ namespace syseng_back.DAL.Repositories
                 if (projectTypeRepository == null)
                     projectTypeRepository = new ProjectTypesRepository(db);
                 return projectTypeRepository;
+            }
+        }
+
+        public IRepository<Lead> Leads
+        {
+            get
+            {
+                if (leadRepository == null)
+                    leadRepository = new LeadRepository(db);
+                return leadRepository;
             }
         }
 

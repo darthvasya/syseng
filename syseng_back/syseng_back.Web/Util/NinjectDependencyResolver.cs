@@ -30,6 +30,7 @@ namespace syseng_back.Web.Util
             kernel.Bind<IUserService>().To<UserService>();
             kernel.Bind<IArticleService>().To<ArticleService>();
             kernel.Bind<IProjectService>().To<ProjectService>();
+            kernel.Bind<ILeadService>().To<LeadService>();
         }
     }
 }

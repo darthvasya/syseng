@@ -14,11 +14,13 @@ namespace syseng_back.Web.Controllers
     {
         IArticleService _articleService;
         IProjectService _projectService;
+        ILeadService _leadService;
 
-        public homeController(IArticleService articleService, IProjectService projectService)
+        public homeController(IArticleService articleService, IProjectService projectService, ILeadService leadService)
         {
             this._articleService = articleService;
             this._projectService = projectService;
+            this._leadService = leadService;
         }
 
         public ActionResult index()
