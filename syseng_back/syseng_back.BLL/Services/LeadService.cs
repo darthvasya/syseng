@@ -28,6 +28,7 @@ namespace syseng_back.BLL.Services
             lead.Date = DateTime.Now;
             Mapper.Initialize(c => c.CreateMap<LeadDTO, Lead>());
             _context.Leads.Create(Mapper.Map<LeadDTO, Lead>(lead));
+            SendEmail();
             _context.Save();
         }
 
@@ -49,7 +50,7 @@ namespace syseng_back.BLL.Services
             // адрес smtp-сервера и порт, с которого будем отправлять письмо
             SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
             // логин и пароль
-            smtp.Credentials = new NetworkCredential("somemail@gmail.com", "mypassword");
+            smtp.Credentials = new NetworkCredential("vasyamakarchuk@gmail.com", "");
             smtp.EnableSsl = true;
             smtp.Send(m);
         }
